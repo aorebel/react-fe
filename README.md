@@ -68,3 +68,74 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Create React App and add packages
+
+npx create-react-app
+
+npm install or npm i
+
+## Installing React Router Dom v6 for Routing
+
+npm i react-router-dom@6
+
+
+## index.js syntax for applying React-Router-DOM-v6 in ReactJS v18
+<code>
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <App tab="home" />
+        </BrowserRouter>
+    </React.StrictMode>
+    
+    );
+
+reportWebVitals();
+</code>
+
+
+## Install React-Tailwind package
+
+Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both tailwind.config.js and postcss.config.js.
+
+<code>
+npx create-react-app my-project
+cd my-project
+</code>
+
+<b>Configure your template paths</b>
+Add the paths to all of your template files in your tailwind.config.js file.
+
+<code>
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+</code>
+
+<b>Add the Tailwind directives to your CSS</b>
+
+Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+
+<code>
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+</code>
