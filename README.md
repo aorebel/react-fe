@@ -72,17 +72,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 # Create React App and add packages
 
-npx create-react-app
+`npx create-react-app`
 
-npm install or npm i
+`npm install or npm i`
 
 ## Installing React Router Dom v6 for Routing
 
-npm i react-router-dom@6
+`npm i react-router-dom@6`
 
 
 ## index.js syntax for applying React-Router-DOM-v6 in ReactJS v18
-<code>
+
+<i>index.js</i>
+
+```
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
 import ReactDOM from 'react-dom';
@@ -103,22 +106,22 @@ root.render(
     );
 
 reportWebVitals();
-</code>
+```
 
 
 ## Install React-Tailwind package
 
-Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both tailwind.config.js and postcss.config.js.
+Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both <i> tailwind.config.js </i> and postcss.config.js.
 
-<code>
+```
 npx create-react-app my-project
 cd my-project
-</code>
+```
 
 <b>Configure your template paths</b>
 Add the paths to all of your template files in your tailwind.config.js file.
 
-<code>
+```
 module.exports = {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
@@ -128,14 +131,14 @@ module.exports = {
   },
   plugins: [],
 }
-</code>
+```
 
 <b>Add the Tailwind directives to your CSS</b>
 
-Add the @tailwind directives for each of Tailwind’s layers to your ./src/index.css file.
+Add the @tailwind directives for each of Tailwind’s layers to your <l> ./src/index.css </i> file.
 
-<code>
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-</code>
+```
