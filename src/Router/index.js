@@ -25,37 +25,37 @@ export default function BaseRouter(){
     switch (location.pathname){
         default:
             return(
-                <SinglePageRouter />
+                <AdminRouter />
             )
             
-        case '/dashboard':
+        case '/':
             return(
                 <>
-                <AdminRouter />
+                <SinglePageRouter />
                 <h1>You are currently on the <b>{location.pathname.toString().replace("/", "")}</b> page!</h1>
                 </>
             );
-        case '/dashboard/notif':
+        case '/about':
             return(
                 <>
-                <AdminRouter />
+                 <SinglePageRouter />
                 <h1>You are currently on the <b>{location.pathname.toString().replace("/", "")}</b> page!</h1>
                 </>
             );
-        case '/dashboard/inbox':
+        case '/gallery':
             return(
                 <>
-                <AdminRouter />
+                 <SinglePageRouter />
                 <h1>You are currently on the <b>{location.pathname.toString().replace("/", "")}</b> page!</h1>
                 </>
             );
-        case '/dashboard/profile':
-            return(
-                <>
-                <AdminRouter />
-                <h1>You are currently on the <b>{location.pathname.toString().replace("/", "")}</b> page!</h1>
-                </>
-            );
+        // case '/dashboard/profile':
+        //     return(
+        //         <>
+        //         <AdminRouter />
+        //         <h1>You are currently on the <b>{location.pathname.toString().replace("/", "")}</b> page!</h1>
+        //         </>
+        //     );
     }
     
 }
