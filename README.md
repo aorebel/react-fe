@@ -68,3 +68,102 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<<<<<<< HEAD
+=======
+
+
+# Create React App and add packages
+
+`npx create-react-app`
+
+`npm install or npm i`
+
+## Installing React Router Dom v6 for Routing
+
+`npm i react-router-dom@6`
+
+
+## index.js syntax for applying React-Router-DOM-v6 in ReactJS v18
+
+<i>index.js</i>
+
+```
+import React from 'react';
+import { BrowserRouter } from 'react-router-dom';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+
+const container = document.getElementById('root');
+const root = ReactDOM.createRoot(container);
+
+root.render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <App tab="home" />
+        </BrowserRouter>
+    </React.StrictMode>
+    
+    );
+
+reportWebVitals();
+```
+
+<i>App.js</i>
+
+```
+import * as React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home.js';
+import './static/App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello World!!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      
+    </div>
+  );
+}
+
+export default App;
+```
+
+## Install React-Tailwind package
+
+Install tailwindcss and its peer dependencies via npm, and then run the init command to generate both <i> tailwind.config.js </i> and postcss.config.js.
+
+```
+npx create-react-app my-project
+cd my-project
+```
+
+<b>Configure your template paths</b>
+Add the paths to all of your template files in your tailwind.config.js file.
+
+```
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+<b>Add the Tailwind directives to your CSS</b>
+
+Add the @tailwind directives for each of Tailwind’s layers to your <l> ./src/index.css </i> file.
+
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+>>>>>>> multi-layout
