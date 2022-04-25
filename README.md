@@ -166,4 +166,24 @@ Add the @tailwind directives for each of Tailwind’s layers to your <l> ./src/i
 @tailwind components;
 @tailwind utilities;
 ```
->>>>>>> multi-layout
+
+
+## Deploying with Surge
+
+<i>Install Surge on you Local Project </i>
+```
+npm i -g surge
+```
+<i>Build your project for production and deploy to surge</i>
+```
+npm run build
+cd build
+surge
+```
+
+### NOTE:
+1. Just press enter when prompted for your project directory
+2. You can change the subdomain for the auto-generated domain provided by Surge
+3. After that you can now visit your app
+
+
