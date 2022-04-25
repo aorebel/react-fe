@@ -108,6 +108,28 @@ root.render(
 reportWebVitals();
 ```
 
+<i>App.js</i>
+
+```
+import * as React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Home from './Pages/Home.js';
+import './static/App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <h1>Hello World!!</h1>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      
+    </div>
+  );
+}
+
+export default App;
+```
 
 ## Install React-Tailwind package
 
