@@ -8,16 +8,16 @@ export default function AdminSideNav(){
              <hr />
             <ul class="font-light">
                 <li class="pt-4 pb-4">
-                    <Link to="/dashboard" class="">Menu 1</Link>
+                    <Link to="/dashboard/menu1" class="">Menu 1</Link>
                 </li>
                 <li class="pt-4 pb-4">
-                    <Link to="/dashboard" class="">Menu 2</Link>
+                    <Link to="/dashboard/menu2" class="">Menu 2</Link>
                 </li>
                 <li class="pt-4 pb-4">
-                    <Link to="/dashboard" class="">Menu 3</Link>
+                    <Link to="/dashboard/menu3" class="">Menu 3</Link>
                 </li>
                 <li class="pt-4 pb-4">
-                    <Link to="/dashboard" class="">Menu 4</Link>
+                    <Link to="/dashboard/menu4" class="">Menu 4</Link>
                 </li>
             </ul>
                     

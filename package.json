@@ -8,10 +8,9 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-<<<<<<< HEAD
-=======
+
     "react-router-dom": "^6.3.0",
->>>>>>> multi-layout
+
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
@@ -38,13 +37,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
-=======
+
   },
   "devDependencies": {
     "autoprefixer": "^10.4.5",
     "postcss": "^8.4.12",
     "tailwindcss": "^3.0.24"
->>>>>>> multi-layout
+
   }
 }

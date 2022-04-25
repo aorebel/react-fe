@@ -10,7 +10,7 @@ export default function SinglaPageNav(){
                 <Link to="/" class="pl-4 pr-4">Home</Link>|
                 <Link to="/about" class="pl-4 pr-4">About</Link>|
                 <Link to="/gallery" class="pl-4 pr-4">Gallery</Link>|
-                <Link to="/dashboard" class="pl-4 pr-4">Dashboard</Link>
+                <Link to="/dashboard/avin" class="pl-4 pr-4">Dashboard</Link>
                 </span>
                 
             </ul>
