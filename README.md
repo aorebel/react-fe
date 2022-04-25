@@ -181,4 +181,8 @@ surge
 2. You can change the subdomain for the auto-generated domain provided by Surge
 3. After that you can now visit your app
 
-
+## References:
+1. https://jsshowcase.com/question/react-router-v6-how-to-render-multiple-component-inside-and-outside-a-div-with-the-same-path
+2. https://github.com/aorebel/react-fe/tree/master/src
+3. https://tailwindcss.com/
+4. https://reactrouter.com/docs/en/v6
